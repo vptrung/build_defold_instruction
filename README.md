@@ -1,18 +1,18 @@
-##:: DEFOLD BUILD
+## ::DEFOLD ENGINE + EDITOR BUILD
 
-####Required Tools : 
+#### Required Tools : 
 - HomeBrew 
-- Python 2.7.16 - 64 bit ( 32 bit won’t run )  
+- Python 2.7.16 - 64 bit *( 32 bit won’t run )*
 - Wget 
 - Pip
-- Setuptools  
+- Setuptools 
 - JDK 11.0.2
 - IntelliIDEA Community + Cursive
 
 #### Instruction :
 
 1. Git Clone Defold from GitHub  
-- Download won’t work.
+*- Download won’t work.*
 
 2. Download packages
 - Run through all scripts in /scripts/package (Xcode / Emscripten / Android )
@@ -64,3 +64,6 @@
         cd editor
         lein init
 
+12. Run Editor 
+
+        lein run
