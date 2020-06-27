@@ -1,4 +1,4 @@
-## ::DEFOLD ENGINE + EDITOR BUILD
+## ::DEFOLD ENGINE + EDITOR BUILD ON MOJAVE
 
 #### Required Tools : 
 - HomeBrew 
@@ -9,53 +9,54 @@
 - JDK 11.0.2
 - IntelliIDEA Community + Cursive
 
-#### Instruction :
+### Instruction
 
-1. Git Clone Defold from GitHub  
+##### 1. Git Clone Defold from GitHub  
 *- Download won’t work.*
 
-2. Download packages
-- Run through all scripts in /scripts/package (Xcode / Emscripten / Android )
+##### 2. Download packages
+- Run through all scripts in /scripts/package/
 
-3. Install JDK 11.0.2
+##### 3. Install JDK 11.0.2
 - download + extract somewhere
 
         sudo cp -R jdk-11.0.2.jdk /Library/Java/JavaVirtualMachines/
         /usr/libexec/java_home -V
         /usr/libexec/java_home -v 11.0.2
 
-4. Install install_ems & copy .emscripten
+##### 4. Install install_ems & copy .emscripten
 
         ./scripts/build.py install_ems --package-path=./local_sdks
         cp ./tmp/dynamo_home/ext/SDKs/emsdk-1.39.16/.emscripten ~/
 
-5. Run Shell to init Environment :
+##### 5. Run Shell to init Environment :
         
         ./scripts/build.py shell --platform=x86_64-darwin --package-path=./local_sdks/
 
-6. Re-install setup tools if got “ContextualZipFile Error” as :
+##### 6. Re-install setup tools if got “ContextualZipFile Error” as :
         
         PATH=$PATH:~/Library/Python/2.7/bin >> ~/.bash_profile
         source ~/.bash_profile
 
-7. Change XCODE_VERSION & PACKAGES_XCODE_TOOLCHAIN into current using version 
-( check downloaded XCODE in ./local_sdks )
+##### 7. Change XCode version 
 
-8. Run Install Extension :
+        XCODE_VERSION & PACKAGES_XCODE_TOOLCHAIN into current using version 
+        ( check downloaded XCODE in ./local_sdks )
+
+##### 8. Run Install Extension :
 
         ./scripts/build.py install_ext --platform=x86_64-darwin --package-path=./local_sdks
 
-
-9. Install lacking stuffs :
+##### 9. Install lacking stuffs :
 
         brew install wget curl p7zip ccache dos2unix cmake boost boost-python
         pip install httpserver boost boost-python wheel 
 
-10. Build Engine : 
+##### 10. Build Engine : 
 
         ./scripts/build.py build_engine --platform=x86_64-darwin --skip-tests -- --skip-build-tests 
 
-11. Lein Init 
+##### 11. Lein Init 
 - Run Shell again if new Terminal :
 
         ./scripts/build.py shell --platform=x86_64-darwin --package-path=./local_sdks/
@@ -64,6 +65,6 @@
         cd editor
         lein init
 
-12. Run Editor 
+##### 12. Run Editor 
 
         lein run
