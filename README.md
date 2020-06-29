@@ -33,10 +33,18 @@
         
         ./scripts/build.py shell --platform=x86_64-darwin --package-path=./local_sdks/
 
-##### 6. Re-install setup tools if got “ContextualZipFile Error” as :
+##### 6. Re-install setuptools/Python 64-bit if got “ContextualZipFile Error” :
+Check Python PATH, if not exist then:
+
+- MacOS Mojave and below :
         
         PATH=$PATH:~/Library/Python/2.7/bin >> ~/.bash_profile
         source ~/.bash_profile
+
+- MacOS Catalina or later :
+
+        PATH=$PATH:~/Library/Python/2.7/bin >> ~/.zshrc
+        source ~/.zshrc
 
 ##### 7. Change XCode version 
 
