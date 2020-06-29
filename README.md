@@ -20,7 +20,8 @@
         
         ./scripts/package/package_emscripten.sh 
         ./scripts/package/package_xcode_and_sdks.sh
-        ....
+        ./scripts/package/package_android_ndk.sh 
+        ./scripts/package/package_android_sdk.sh
 
 ##### 3. Install JDK 11.0.2
 - download + extract somewhere
