@@ -5,6 +5,10 @@
 - Python 2.7.16 - 64 bit *( 32 bit won’t run )*
 - Wget 
 - Pip
+
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        python get-pip.py
+
 - Setuptools 
 - JDK 11.0.1
 - IntelliIDEA Community + Cursive
