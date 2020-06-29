@@ -16,6 +16,11 @@
 
 ##### 2. Download packages
 - Run through all scripts in /scripts/package/
+- From /defold folder :
+        
+        ./scripts/package/package_emscripten.sh 
+        ./scripts/package/package_xcode_and_sdks.sh
+        ....
 
 ##### 3. Install JDK 11.0.2
 - download + extract somewhere
