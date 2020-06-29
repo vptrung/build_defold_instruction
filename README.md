@@ -71,7 +71,11 @@ Check Python PATH, if not exist then:
 ##### 9. Install lacking stuffs :
 
         brew install wget curl p7zip ccache dos2unix cmake boost boost-python
-        pip install httpserver boost wheel 
+        pip install httpserver boost wheel protobuf google
+        
+- if Get protobuf error :
+        
+        pip install --no-binary=protobuf protobuf
         pip install google-cloud google google-api-python-client protobuf
 
 ##### 10. Build Engine : 
