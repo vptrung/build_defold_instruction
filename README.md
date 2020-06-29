@@ -6,7 +6,7 @@
 - Wget 
 - Pip
 - Setuptools 
-- JDK 11.0.2
+- JDK 11.0.1
 - IntelliIDEA Community + Cursive
 
 ### Instruction
@@ -26,9 +26,9 @@
 ##### 3. Install JDK 11.0.2
 - download + extract somewhere
 
-        sudo cp -R jdk-11.0.2.jdk /Library/Java/JavaVirtualMachines/
+        sudo cp -R jdk-11.0.1.jdk /Library/Java/JavaVirtualMachines/
         /usr/libexec/java_home -V
-        /usr/libexec/java_home -v 11.0.2
+        /usr/libexec/java_home -v 11.0.1
 
 ##### 4. Install install_ems & copy .emscripten
 
