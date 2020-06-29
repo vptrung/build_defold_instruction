@@ -1,4 +1,4 @@
-## ::DEFOLD ENGINE + EDITOR BUILD ON MOJAVE
+## ::DEFOLD ENGINE + EDITOR BUILD ON MACOS
 
 #### Required Tools : 
 - HomeBrew 
@@ -11,6 +11,9 @@
 
 - Setuptools 
 - JDK 11.0.1
+
+        https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_osx-x64_bin.tar.gz
+
 - IntelliIDEA Community + Cursive
 
 ### Instruction
