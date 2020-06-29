@@ -15,8 +15,8 @@
 *- Download won’t work.*
 
 ##### 2. Download packages
-- Run through all scripts in /scripts/package/
-- From /defold folder :
+- Run through all scripts in `/scripts/package/`
+- From `/defold` folder :
         
         ./scripts/package/package_emscripten.sh 
         ./scripts/package/package_xcode_and_sdks.sh
