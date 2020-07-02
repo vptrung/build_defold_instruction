@@ -105,3 +105,7 @@ Check Python PATH, if not exist then:
 Check for current python version in `/Applications/Python\` then run :
 
         /Applications/Python\ 2.7/Install\ Certificates.command
+
+- The result is at :
+
+        ./editor/target/editor/Defold-x86_64-darwin.zip 
