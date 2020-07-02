@@ -98,6 +98,7 @@ Check Python PATH, if not exist then:
 ##### 13. Bundle Editor
 
         ./editor/scripts/build.py shell --platform=x86_64-darwin --package-path=./local_sdks/
+        ./editor/scripts/bundle.py build  --platform=x86_64-darwin --version=1.2.169 --engine-artifacts=dynamo-home
         ./editor/scripts/bundle.py bundle  --platform=x86_64-darwin --version=1.2.169 --engine-artifacts=dynamo-home
 
 - If error on SSL FAILED : 
