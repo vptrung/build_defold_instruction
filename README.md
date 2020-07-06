@@ -47,7 +47,7 @@
         ./scripts/build.py shell --platform=x86_64-darwin --package-path=./local_sdks/
 
 ##### 6. Re-install setuptools/Python 64-bit if got “ContextualZipFile Error” :
-Check Python PATH, if not exist then:
+Check Python `PATH`, if not exist then:
 
 - MacOS Mojave and below :
         
@@ -77,6 +77,10 @@ Check Python PATH, if not exist then:
         
         pip install --no-binary=protobuf protobuf
         pip install google-cloud google google-api-python-client protobuf
+        
+- If can’t find *GCC* or *G++* then re-check `waf_dynamo.py` and `build.py` 
+
+        for XCODE_VERSION and the PACKAGES_XCODE_TOOLCHAIN path.
 
 ##### 10. Build Engine : 
 
