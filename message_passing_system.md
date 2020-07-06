@@ -12,7 +12,8 @@ Because Defold want to be fast with native C++ `dmengine` underneath, while rema
 
 ## How it work 
 - You send Defold a message via `msg.post`, targetting a certain object address, mostly from `hash("#something")` or 'msg.url`. 
-- Then `dmengine` will get your mail, processing it and call the function with the data you passed on. It can return back what you want too.
+- Then `dmengine` will get your mail, process and call the function with the data you passed on. 
+- It can return back what you want too.
 
 ## How to implement it
 1. Define your function description in `engine\gamesys\proto\something.proto`
