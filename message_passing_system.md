@@ -26,7 +26,9 @@ Because Defold want to be fast with native C++ `dmengine` underneath, while rema
         
 Remember to comment alike to other messages style.
 
-2. Rebuild your `protobuf` 
+2. Rebuild the Engine
+
+         ./scripts/build.py build_engine --platform=x86_64-darwin --skip-tests -- --skip-build-tests
 
 3. Add your message processing part into `com_collision_object.cpp` :
 
