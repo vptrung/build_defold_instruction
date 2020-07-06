@@ -30,7 +30,7 @@
         ./scripts/package/package_android_ndk.sh 
         ./scripts/package/package_android_sdk.sh
 
-##### 3. Install JDK 11.0.2
+##### 3. Install [JDK 11.0.1](https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_osx-x64_bin.tar.gz)
 - download + extract somewhere
 
         sudo cp -R jdk-11.0.1.jdk /Library/Java/JavaVirtualMachines/
