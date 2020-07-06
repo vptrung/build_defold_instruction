@@ -49,3 +49,5 @@ Should be something like :
               dmPhysics::ApplyForce2D(physics_context->m_Context2D, component->m_Object2D, af->m_Force, af->m_Position);
           }
      }        
+
+4. Rebuild the engine & `lein init`
