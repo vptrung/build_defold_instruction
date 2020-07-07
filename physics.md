@@ -15,6 +15,11 @@ Built-in Defold properties/function
 ### :: Modification  
 
 *properties :*
+- body_angle
+
+      go.get("#body", "body_angle")  
+      go.set("#body", "body_angle", 1)
+
 - body_position
 
       go.get("#body", "body_position")  
