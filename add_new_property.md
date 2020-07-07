@@ -81,3 +81,12 @@ Remember that in Defold, it goes from Lua->component_wrapper->native
             }
             return dmGameObject::PROPERTY_RESULT_OK;
         }
+        
+# On Message :
+
+- Look for this function in `comp_collision_object.cpp` and do the same :
+
+       dmGameObject::UpdateResult CompCollisionObjectOnMessage(const dmGameObject::ComponentOnMessageParams& params)
+       {
+         //...
+       }
