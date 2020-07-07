@@ -27,6 +27,10 @@ Remember that in Defold, it goes from Lua->component_wrapper->native
         //...
       }
 
+- Add your `PROP_BODY_POSITION` on top of class, under namespace area :
+
+      static const dmhash_t PROP_BODY_POSITION = dmHashString64("body_position");
+
 - Add new part below near-ending :
 
       else if (params.m_PropertyId == PROP_BODY_POSITION)
