@@ -1,4 +1,4 @@
-## Overview 
+### Overview 
 The process is like 3 major steps : 
 - Define new proto message
 - Add Set-Property function
@@ -6,7 +6,7 @@ The process is like 3 major steps :
 
 Remember that in Defold, it goes from Lua->component_wrapper->native
 
-## Add New Property
+#### Add New Property
 - Look for proto file, in this case, we add new `body_position` into `physics_ddf.proto` :
 
       message RequestBodyPosition {}
@@ -18,7 +18,7 @@ Remember that in Defold, it goes from Lua->component_wrapper->native
 
 - Rebuild the Engine, it will generate new header that contains above type in `physics_ddf.h`
 
-## Set Property 
+#### Set Property 
 
 - Look for this function in `comp_collision_object.cpp` :
 
@@ -54,7 +54,7 @@ Remember that in Defold, it goes from Lua->component_wrapper->native
         
  - In case, that you don't have certain function like `dmPhysics::SetWorldPosition2D`, you will need to implement and add to the header.
  
-# Get Property
+#### Get Property
 
 - Look for this function in `comp_collision_object.cpp` :
 
@@ -82,7 +82,7 @@ Remember that in Defold, it goes from Lua->component_wrapper->native
             return dmGameObject::PROPERTY_RESULT_OK;
         }
         
-# On Message :
+#### On Message :
 
 - Look for this function in `comp_collision_object.cpp` and do the same :
 
