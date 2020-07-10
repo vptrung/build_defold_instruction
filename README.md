@@ -51,7 +51,7 @@
         # Alias for Defold Engine Build
         alias shell_defold='./scripts/build.py shell --platform=x86_64-darwin --package-path=./local_sdks/'
         
-Put those lines into your `~/.bash_profile` or `~/.zbashrc`,easiest way is to use `sh cmd.sh --shell_mojave`
+Put those lines into your `~/.bash_profile` or `~/.zshrc`,easiest way is to use `sh cmd.sh --shell_mojave`
 
 ##### 6. Re-install setuptools/Python 64-bit if got “ContextualZipFile Error” :
 Check Python `PATH`, if not exist then:
