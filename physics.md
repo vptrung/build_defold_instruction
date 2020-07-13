@@ -32,7 +32,7 @@ Built-in Defold properties/function
       position = go.get_world_position()
       msg.post("#body", "apply_force_impulse", force, position)
 
-- physics.set_step_per_frame(stepIteration, velocityIteration, positionIteration)
+- physics.set_step_per_frame ( stepIteration, velocityIteration, positionIteration )
 
       function init(self)
         physics.set_step_per_frame(8, 16, 8)
