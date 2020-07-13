@@ -16,6 +16,8 @@
     msg.post(render, "draw_circle", {
         radius = 400,
         segment = 64,
+        angle_begin = 0,
+        angle_end = 360,
         position = vmath.vector3(self.x, self.y, 0),
         color = color_red
       })
