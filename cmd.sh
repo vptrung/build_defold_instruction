@@ -27,7 +27,7 @@ sudo ./scripts/build.py build_builtins
 sh bundle_editor.sh
 
 ## NOTE 
-
+______________________________________________
 - Normal workflow after environment setup's done is like : 
 
 1. cd to your folder : `cd_defold`
