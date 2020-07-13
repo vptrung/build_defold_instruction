@@ -31,3 +31,9 @@ Built-in Defold properties/function
       force = vmath.vector3(0,1000,0)
       position = go.get_world_position()
       msg.post("#body", "apply_force_impulse", force, position)
+
+- physics.set_step_per_frame(stepIteration, velocityIteration, positionIteration)
+
+      function init(self)
+        physics.set_step_per_frame(8, 16, 8)
+      end
