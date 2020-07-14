@@ -26,6 +26,21 @@ Built-in Defold properties/function
       go.set("#body", "body_position", { body_position = vmath.vector3(2,10,0) })
 
 *function :*
+
+- set_alpha_tag: 
+
+      physics.set_alpha_tag (“#body”, true)
+      -- mark a body to be updated along world step.
+
+- set_alpha_value: 
+
+      physics.set_alpha_value(“#body”, alphaX, alphaY, rotationZ)
+      -- alpha value {x:y} to be updated via world step.
+
+- set_gravity_scale
+
+      physics.set_gravity_scale("#body", 1.5)
+
 - apply_force_impulse
  
       force = vmath.vector3(0,1000,0)
