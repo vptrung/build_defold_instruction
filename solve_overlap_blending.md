@@ -5,7 +5,7 @@
 When you have 2 alpha-based images, and want them to "merge" together instead of bolder color inbetween the intersection.
 
 ### 2. How to solve it 
-I did try modifying the blending setting by some native openGL in defold, but things didn't work out.
+I did try modifying the blending setting by some native openGL in defold, but things didn't work out like it did in other engine.
 The proper way to do this is by using Defold render pipeline :
 
     1. Clear by empty color bit
