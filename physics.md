@@ -27,9 +27,9 @@ Built-in Defold properties/function
 
 *function :*
 
-- set_alpha_tag: 
+- set_controllable: 
 
-      physics.set_alpha_tag (“#body”, true)
+      physics.set_controllable (“#body”, true)
       -- mark a body to be updated along world step.
 
 - set_alpha_value: 
