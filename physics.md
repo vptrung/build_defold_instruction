@@ -27,6 +27,12 @@ Built-in Defold properties/function
 
 *function :*
 
+- copy_state:
+
+      physics.set_master_body("ball1/Ball#body", "master_ball/Ball#body")
+      physics.copy_state(collisionobject, physics.COPY_LINEAR_VEC)
+      physics.set_copy_disable() 
+
 - set_controllable: 
 
       physics.set_controllable (“#body”, true)
@@ -47,7 +53,7 @@ Built-in Defold properties/function
       position = go.get_world_position()
       msg.post("#body", "apply_force_impulse", force, position)
 
-- physics.set_step_per_frame ( stepIteration, velocityIteration, positionIteration )
+- physics.config ( stepIteration, velocityIteration, positionIteration )
 
       function init(self)
         physics.set_step_per_frame(8, 16, 8)
