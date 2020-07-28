@@ -15,25 +15,25 @@ Unlike native extension, where you can just paste link and fetch the module via 
 2. `/src/wscript` content can be ref by searching 'iap' but keywords when editing is :
 - Main source name : 
 
-    source = 'tapticengine.cpp'.split()
+      source = 'tapticengine.cpp'.split()
     
 - Custom stuff for each platform :
 
-    platforms = ['arm.*?darwin', 'x86_64-ios']
-        for p in platforms:
-            if re.match(p, bld.env.PLATFORM):
-                source += ['tapticengine.mm'] // Add iOS support here
-                break
+        platforms = ['arm.*?darwin', 'x86_64-ios']
+            for p in platforms:
+                if re.match(p, bld.env.PLATFORM):
+                    source += ['tapticengine.mm'] // Add iOS support here
+                    break
                 
 - Add lib if needed, target = your_module_name :
 
-    bld.new_task_gen(features = 'cxx cstaticlib',
-                    includes = '.',
-                    source = source,
-                    target = 'TapticEngine')
+        bld.new_task_gen(features = 'cxx cstaticlib',
+                        includes = '.',
+                        source = source,
+                        target = 'TapticEngine')
                     
 - Add doc here :
 
-    apidoc_extract_task(bld, ['tapticengine_doc.h'])
+        apidoc_extract_task(bld, ['tapticengine_doc.h'])
     
     
