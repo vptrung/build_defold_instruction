@@ -6,11 +6,12 @@ Unlike native extension, where you can just paste link and fetch the module via 
 
 ## Steps
 1. Add your module folder to /engine with structure :
---- src
------|
-------- your_module.cpp
-------- wscript
---- wsscript
+
+            --- src
+            -----|
+            ------- your_module.cpp
+            ------- wscript
+            --- wsscript
 
 2. `/src/wscript` content can be ref by searching 'iap' but keywords when editing is :
 - Main source name : 
