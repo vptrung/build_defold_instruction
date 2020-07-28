@@ -41,7 +41,7 @@ Unlike native extension, where you can just paste link and fetch the module via 
 
         build.py build_docs
         
-###- *Most important* Waf config :
+#### *Most important* Waf config :
 
         PREFIX=$DYNAMO_HOME waf configure --platform=x86_64-darwin
     
