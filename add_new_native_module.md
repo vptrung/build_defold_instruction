@@ -36,5 +36,10 @@ Unlike native extension, where you can just paste link and fetch the module via 
 - Add doc here :
 
         apidoc_extract_task(bld, ['tapticengine.cpp'])
+        
+- Build Docs again :
+
+        build.py build_docs
+        
     
     
