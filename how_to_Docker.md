@@ -38,6 +38,12 @@
 
 - Now, remember to download the clang 9.0.0 for Ubuntu 16.04 from google, and put it under your ./local_sdks
 
+- About ccTools, try this with Docker turned on :
+
+      defold$ ./scripts/docker/build.sh
+      defold$ ./scripts/docker/run.sh
+      ubuntu$ ./scripts/package/package_cctools.sh
+
 - We can start a server inside `/local_sdks` by :
 
       (cd ./local_sdks;python -m SimpleHTTPServer)
