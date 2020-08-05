@@ -33,6 +33,10 @@ Built-in Defold properties/function
       physics.copy_state(collisionobject, physics.COPY_LINEAR_VEC)
       physics.set_copy_disable() 
 
+- set_allow_sleep:
+
+      physics.set_allow_sleep("#body", true)
+
 - set_controllable: 
 
       physics.set_controllable (“#body”, true)
