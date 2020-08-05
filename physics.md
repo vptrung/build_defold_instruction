@@ -23,7 +23,7 @@ Built-in Defold properties/function
 - body_position
 
       go.get("#body", "body_position")  
-      go.set("#body", "body_position", { body_position = vmath.vector3(2,10,0) })
+      go.set("#body", "body_position", vmath.vector3(0.1, 0.15, 0))
 
 *function :*
 
