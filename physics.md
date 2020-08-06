@@ -31,7 +31,8 @@ Built-in Defold properties/function
 
       physics.set_master_body("ball1/Ball#body", "master_ball/Ball#body")
       physics.copy_state(collisionobject, physics.COPY_LINEAR_VEC)
-      physics.set_copy_disable() 
+      physics.set_copy_ratio("ball1/Ball#body", 1.0)
+      physics.set_copy_disable("ball1/Ball#body") 
 
 - set_allow_sleep:
 
