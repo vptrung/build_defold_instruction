@@ -60,5 +60,5 @@ Built-in Defold properties/function
 - physics.config ( stepIteration, velocityIteration, positionIteration )
 
       function init(self)
-        physics.set_step_per_frame(8, 16, 8)
+        physics.config(8, 16, 8)
       end
