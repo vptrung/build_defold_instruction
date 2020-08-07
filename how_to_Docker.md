@@ -1,6 +1,6 @@
-## Docker Installation for Defold Extender
+## Defold Extender on Docker 
 
-## 1. Steps 
+## 1. Build Docker 
 
 - Full fill your ./local_sdks
 
@@ -54,3 +54,17 @@
       ./server/scripts/build.sh -xtest
      
 - Wait to see if your other python server send GET for clang..if it got that lib then we may pass.
+
+## 2. Run 
+- After finished build Docker image, run this :
+
+      shell_defold_x86_64
+      # then <cd> to /extender
+      
+      ./server/script/run-local.sh
+      # => server will start at http://localhost:9000
+      
+- The reason we need to run shell, is for `DYNAMO_HOME` to be detected on extender Docker.
+
+- Now we can start building native extension !
+
