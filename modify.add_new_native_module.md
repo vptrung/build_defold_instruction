@@ -43,7 +43,13 @@ Unlike native extension, where you can just paste link and fetch the module via 
 
         build.py build_docs
         
-#### *Most important* Waf config :
+#### *Most important things*
+
+1.Waf config : 
 
         PREFIX=$DYNAMO_HOME waf configure --platform=x86_64-darwin
-    
+
+2.Extender/Docker support :
+- Once you have done running your module in local build and nothing seem to be wrong
+- Remember to add module name + symbol into `defold/share/extender/build.yml` before bundling your editor.
+- This help your local server ( which rely on DYNAMO_HOME ) to also include your newly added module, while adding other native extensions.
