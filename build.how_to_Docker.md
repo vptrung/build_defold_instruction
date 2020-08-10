@@ -94,3 +94,14 @@
       
       # pull from other machine with Docker
       docker pull yourhubusername/verse_gapminder:firsttry
+      
+      # to run-local.sh in your extender, need to rename image:
+      docker tag your_user_name/verse_image:tag extender/extender:latest
+      
+      # add dynamo_home 
+      shell_defold_x86_64
+      
+      # fire server 
+      ./server/scripts/run-local.sh
+      
+      # now will available at port 9000 !
