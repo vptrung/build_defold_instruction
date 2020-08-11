@@ -29,10 +29,10 @@ Built-in Defold properties/function
 
 - copy_state:
 
-      physics.set_master_body("ball1/Ball#body", "master_ball/Ball#body")
-      physics.copy_state(collisionobject, physics.COPY_LINEAR_VEC)
-      physics.set_copy_ratio("ball1/Ball#body", 1.0)
+      physics.set_master("ball1/Ball#body", "master_ball/Ball#body")
+      physics.copy(slave_body, state, ratio, offset)
       physics.set_copy_disable("ball1/Ball#body") 
+      physics.set_limit(slave_body, state, min, max)
 
 - set_allow_sleep:
 
