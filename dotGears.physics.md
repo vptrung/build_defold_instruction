@@ -37,6 +37,10 @@ Built-in Defold properties/function
 - set_allow_sleep:
 
       physics.set_allow_sleep("#body", true)
+      
+-skip drawing this body in physics debug:
+
+      physics.set_debug_draw("#body", false)
 
 - set_controllable: 
 
@@ -58,8 +62,8 @@ Built-in Defold properties/function
       position = go.get_world_position()
       msg.post("#body", "apply_force_impulse", force, position)
 
-- physics.config ( stepIteration, velocityIteration, positionIteration )
+- physics.set_step_per_frame ( stepIteration, velocityIteration, positionIteration )
 
       function init(self)
-        physics.config(8, 16, 8)
+        physics.set_step_per_frame(8, 16, 8)
       end
