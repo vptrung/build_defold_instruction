@@ -20,7 +20,7 @@ So you found my guide :)
 
 4. also add this line to `game.project`:
 
-        `override_entitlements = 1`
+        override_entitlements = 1
 
 4. re-bundle iOS again.
 
