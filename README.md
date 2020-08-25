@@ -81,6 +81,10 @@ Check Python `PATH`, if not exist then:
 ##### 8. Run Install Extension :
 
         ./scripts/build.py install_ext --platform=x86_64-darwin --package-path=./local_sdks
+        ./scripts/build.py install_ext --platform=x86_64-darwin --package-path=./packages
+
+- Taking note at this step : making wrong path will cause non-sense error.
+- Should have copy some libs like iPhoneOS and XCodeToolchain to /packages from /local_sdks
 
 ##### 9. Install lacking stuffs :
 
