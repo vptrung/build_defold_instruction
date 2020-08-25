@@ -30,6 +30,11 @@
         /usr/libexec/java_home -v 11.0.1
 
 ##### 3. Download packages
+- Install XCode 
+- Install Header, on Mojave :
+
+        sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+
 - Run through all scripts in `/scripts/package/`
 - From `/defold` folder :
         
