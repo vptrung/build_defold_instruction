@@ -21,7 +21,15 @@
 ##### 1. Git Clone Defold from GitHub  
 *- Download won’t work.*
 
-##### 2. Download packages
+
+##### 2. Install [JDK 11.0.1](https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_osx-x64_bin.tar.gz)
+- download + extract somewhere
+
+        sudo cp -R jdk-11.0.1.jdk /Library/Java/JavaVirtualMachines/
+        /usr/libexec/java_home -V
+        /usr/libexec/java_home -v 11.0.1
+
+##### 3. Download packages
 - Run through all scripts in `/scripts/package/`
 - From `/defold` folder :
         
@@ -30,12 +38,6 @@
         ./scripts/package/package_android_ndk.sh 
         ./scripts/package/package_android_sdk.sh
 
-##### 3. Install [JDK 11.0.1](https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_osx-x64_bin.tar.gz)
-- download + extract somewhere
-
-        sudo cp -R jdk-11.0.1.jdk /Library/Java/JavaVirtualMachines/
-        /usr/libexec/java_home -V
-        /usr/libexec/java_home -v 11.0.1
 
 ##### 4. Install install_ems & copy .emscripten
 
