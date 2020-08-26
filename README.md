@@ -122,16 +122,21 @@ Check Python `PATH`, if not exist then:
         lein run
 
 ##### 11. Bundle Editor
+- Originally from `defold` :
 
         ./scripts/build.py shell --platform=x86_64-darwin --package-path=./local_sdks/
         ./scripts/bundle.py build  --platform=x86_64-darwin --version=1.2.169 --engine-artifacts=dynamo-home
         ./scripts/bundle.py bundle  --platform=x86_64-darwin --version=1.2.169 --engine-artifacts=dynamo-home
+        
+- Or we can use `cmd.sh` :
+
+        sh cmd.sh --bundle 1.2.171.14
 
 - If error on SSL FAILED : 
 Check for current python version in `/Applications/Python\` then run :
 
         /Applications/Python\ 2.7/Install\ Certificates.command
 
-- The result is at :
+- The result will be opened automatically after done, at :
 
-        ./editor/target/editor/Defold-x86_64-darwin.zip 
+        ./editor/release/Defold-x86_64-darwin.zip 
