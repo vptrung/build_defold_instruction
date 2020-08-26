@@ -1,18 +1,12 @@
 ## ::DEFOLD ENGINE + EDITOR BUILD ON MACOS
 
 #### Required Tools : 
-- HomeBrew 
 - Python 2.7.16 - 64 bit *( 32 bit won’t run )*
-- Wget 
+- HomeBrew 
 - Pip
 
         curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
         python get-pip.py
-
-- Setuptools 
-- JDK 11.0.1
-
-        https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_osx-x64_bin.tar.gz
 
 - IntelliIDEA Community + Cursive
 
