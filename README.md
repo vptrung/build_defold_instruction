@@ -61,9 +61,9 @@
 
 - install packages 
 
-        sudo apt-get install -y --no-install-recommends libssl-dev openssl libtool autoconf automake build-essential uuid-dev libxi-dev libopenal-dev libgl1-mesa-dev libglw1-mesa-dev freeglut3-dev
-        
-        sudo apt-get install wget curl p7zip ccache lua5.1 libglfw3-dev
+        sudo apt-get install -y --no-install-recommends libssl-dev openssl libtool autoconf automake build-essential uuid-dev libxi-dev libopenal-dev libgl1-mesa-dev libglw1-mesa-dev freeglut3-dev libx11-dev && \
+        sudo apt-get install wget curl p7zip ccache lua5.1 libglfw3-dev && \
+        sudo apt-get install xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev
         
 - to fix clang 9.0.0 can't find libtinfo5 :
         
