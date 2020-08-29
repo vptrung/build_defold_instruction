@@ -65,6 +65,10 @@
         
         sudo apt-get install wget curl p7zip ccache
         
+- to fix clang 9.0.0 can't find libtinfo5 :
+        
+        sudo apt update && sudo apt install -y libtinfo5
+        
 ##### 4. Download packages
 - Install XCode 
 - Install Header, on Mojave :
