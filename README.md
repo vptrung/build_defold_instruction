@@ -16,7 +16,7 @@
 *- Download won’t work.*
 
 
-##### 2. Install [JDK 11.0.1](https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_osx-x64_bin.tar.gz)
+##### 2. Install [JDK 11.0.1 for macOS](https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_osx-x64_bin.tar.gz) & [Linux](https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz)
 - download + extract somewhere
 
         sudo cp -R jdk-11.0.1.jdk /Library/Java/JavaVirtualMachines/
