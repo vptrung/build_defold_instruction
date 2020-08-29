@@ -45,6 +45,19 @@
         for XCODE_VERSION and the PACKAGES_XCODE_TOOLCHAIN path.
         
 - `build.py` will automatically detect XCODE_VERSION & PACKAGES_XCODE_TOOLCHAIN inside `./local_sdks`
+
+##### Linux 
+- install easy_install
+
+        sudo sh -c "echo \#\!/usr/bin/env bash > /usr/local/bin/easy_install" && \
+        sh -c "echo python /usr/lib/python2.7/dist-packages/easy_install.py $\* >> /usr/local/bin/easy_install" && \
+        chmod +x /usr/local/bin/easy_install
+
+- install packages 
+
+        sudo apt-get install -y --no-install-recommends libssl-dev openssl libtool autoconf automake build-essential uuid-dev libxi-dev libopenal-dev libgl1-mesa-dev libglw1-mesa-dev freeglut3-dev
+        
+        sudo apt-get install wget curl p7zip ccache
         
 ##### 4. Download packages
 - Install XCode 
