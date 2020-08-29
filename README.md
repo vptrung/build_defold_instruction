@@ -32,6 +32,8 @@
 
 ##### 3. Install lacking stuffs :
 
+### === MacOS ===
+
         brew install wget curl p7zip ccache dos2unix cmake boost boost-python
         pip install httpserver boost wheel protobuf google
         
@@ -46,7 +48,7 @@
         
 - `build.py` will automatically detect XCODE_VERSION & PACKAGES_XCODE_TOOLCHAIN inside `./local_sdks`
 
-##### Linux 
+### === Linux ===
 - install easy_install
 
         sudo sh -c "echo \#\!/usr/bin/env bash > /usr/local/bin/easy_install" && \
