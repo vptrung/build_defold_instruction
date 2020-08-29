@@ -63,11 +63,19 @@
 
         sudo apt-get install -y --no-install-recommends libssl-dev openssl libtool autoconf automake build-essential uuid-dev libxi-dev libopenal-dev libgl1-mesa-dev libglw1-mesa-dev freeglut3-dev
         
-        sudo apt-get install wget curl p7zip ccache
+        sudo apt-get install wget curl p7zip ccache lua5.1 libglfw3-dev
         
 - to fix clang 9.0.0 can't find libtinfo5 :
         
         sudo apt update && sudo apt install -y libtinfo5
+        
+- to fix lacking any library :
+
+        sudo apt install apt-file
+        
+        # then search with it
+        apt-file search glfw.h
+    
         
 ##### 4. Download packages
 - Install XCode 
