@@ -29,6 +29,12 @@
         tar xzvf openjdk-11.0.1_linux-x64_bin.tar.gz
         sudo mv jdk-11.0.1 /usr/lib/jvm/jdk-11.0.1 
         sudo ln -s /usr/lib/jvm/jdk-11.0.1/bin/javac /bin/javac
+        
+        # Or just follow this 
+        sudo apt-get install -y software-properties-common && \
+        add-apt-repository ppa:openjdk-r/ppa && \
+        apt-get update && \
+        apt-get install -y openjdk-11-jdk
 
 ##### 3. Install lacking stuffs :
 
