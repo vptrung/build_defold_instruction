@@ -61,9 +61,7 @@
         sudo apt-get install wget curl p7zip ccache lua5.1 libglfw3-dev && \
         sudo apt-get install xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev
         
-- get clang 9.0.0 package for Ubuntu :
-
-        https://releases.llvm.org/9.0.0/clang%2bllvm-9.0.0-x86_64-linux-gnu-ubuntu-16.04.tar.zx
+- get [clang 9.0.0 package for Ubuntu](https://releases.llvm.org/9.0.0/clang%2bllvm-9.0.0-x86_64-linux-gnu-ubuntu-16.04.tar.zx)
         
         
 - to fix clang 9.0.0 can't find libtinfo5 :
