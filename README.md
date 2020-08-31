@@ -70,7 +70,7 @@
         
         sudo apt update && sudo apt install -y libtinfo5
         
-- find XCodeDefault11.5 somewhere 
+- find [XCodeDefault11.5 somewhere](https://drive.google.com/file/d/1sC3sBrN3DegjvjPP9Cc-m1oCsxijaXS1/view?usp=sharing)
         
 - to fix lacking any library :
 
