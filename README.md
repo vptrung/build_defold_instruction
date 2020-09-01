@@ -132,7 +132,8 @@ Check Python `PATH`, if not exist then:
 ##### 7. Run Install Extension :
 
         ./scripts/build.py install_ext --platform=x86_64-darwin --package-path=./packages
-
+               
+- Sometimes, the tool may not extract XCodeDefault correctly, but you may do that on your own to `tmp/dynamo_home/ext/SDKs`
 - Taking note at this step : making wrong path will cause non-sense error.
 - Should have copy some libs like iPhoneOS and XCodeToolchain to `/packages` from `/local_sdks`
 
