@@ -140,6 +140,8 @@ Check Python `PATH`, if not exist then:
 ##### 8. Build Engine : 
 
         ./scripts/build.py build_engine --platform=x86_64-darwin --skip-tests -- --skip-build-tests
+        
+        ./scripts/build.py build_engine --platform=x86_64-darwin --skip-bob-light --skip-docs --skip-tests --  --opt-level=0 --skip-build-tests --skip-codesign --verbose
 
 ##### 9. Lein Init 
 - Run Shell again if new Terminal :
